@@ -218,6 +218,10 @@ footer ul li {
         transition: transform 0.5s ease-in;
     }
 
+    .vertical-nav .lista li {
+        padding: 0 2rem;
+    }
+
     .menu-icon {
         display: block;
         cursor: pointer;
