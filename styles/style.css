@@ -236,7 +236,7 @@ footer ul li {
 @media screen and (max-width: 640px) {
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 10vh 60vh 30vh;
+        grid-template-rows: 10vh 70vh 20vh;
     }
 
     .vertical-nav {
