@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 0.8fr 3fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(240, 80, 51);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 8vh;
+    align-items: center;
+    z-index: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+header img {
+    padding: 7px;
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+header p {
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 auto 0 0;
+    color: white;
+}
+
+.vertical-nav {
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    z-index: 1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-right: auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    scrollbar-color: rgb(100, 100, 100) rgb(50, 50, 50);
+    scrollbar-width: thin;
+}
+
+.vertical-nav:hover {
+    overflow-y: scroll;
+}
+
+.vertical-nav .lista {
+    height: 100%;
+    padding-bottom: 20px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.vertical-nav ul li {
+    list-style: none;
+    padding: 1.25rem 1rem;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.vertical-nav ul a {
+    text-decoration: none;
+}
+
+.vertical-nav .lista ul {
+    padding-left: 0;
+}
+
+.vertical-nav .lista ul li {
+    padding-left: 3rem;
+}
+  
+.vertical-nav ul li:hover {
+    background-color: rgb(100, 100, 100);
+    transition: background-color 0.5s;
+}
+
+.categoria {
+    background-color: rgb(40, 40, 40);
+}
+
+.menu-icon {
+    display: none;
+    padding-left: 1rem;
+}
+
+.menu-icon div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 624px) {
+    body {
+        grid-template-columns: 0fr 4fr;
+    }
+
+    .vertical-nav {
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-ativo {
+        transform: translateX(0%);
+    }
+
+    .focus-ativo {
+        background-color: rgb(131, 131, 131);
+    }
+
+    .focus-ativo-footer {
+        background-color: rgb(20, 20, 20);
+        color: rgb(131, 131, 131);
+    }
+}
+
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    overflow-y: scroll;
+    transition: background-color 0.5s ease-in;
+}
+
+article {
+    padding: 1rem 2rem;
+    line-height: 1.6;
+}
+
+article h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+article p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+footer {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    box-shadow: -12px -5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 8vh;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding: 1rem;
+    transition: background-color 0.5s ease-in, color 0.5s ease-in, font-size 0.2s ease-in;
+}
+
+footer p {
+    padding-right: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li {
+    padding: 0.75rem;
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    footer {
+        font-size: 10px;
+    }
+}
