@@ -202,7 +202,7 @@ footer ul li {
     }
 }
 
-@media screen and (max-height: 410px){
+@media screen and (max-height: 420px){
     body {
         grid-template-columns: 0fr 4fr;
         grid-template-rows: 10vh 80vh 10vh;
