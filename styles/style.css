@@ -144,7 +144,7 @@ header p {
     }
 }
 
-@media screen and (max-height: 410px){
+@media screen and (max-height: 1200px){
     body {
         grid-template-columns: 0fr 4fr;
     }
