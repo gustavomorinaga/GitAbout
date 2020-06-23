@@ -187,6 +187,10 @@ footer ul li {
         padding: 0 5rem;
     }
 
+    .vertical-nav .lista ul li {
+        padding-right: 5rem;
+    }
+
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -222,6 +226,10 @@ footer ul li {
         padding: 0 5rem;
     }
 
+    .vertical-nav .lista ul li {
+        padding-right: 5rem;
+    }
+
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -255,6 +263,10 @@ footer ul li {
 
     .vertical-nav .lista li {
         padding: 0 5rem;
+    }
+
+    .vertical-nav .lista ul li {
+        padding-right: 5rem;
     }
 
     .menu-icon {
