@@ -174,7 +174,7 @@ footer ul li {
 
 @media screen and (max-width: 624px) {
     body {
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 0fr 4fr;
         grid-template-rows: 12vh 78vh 10vh;
     }
 
@@ -204,7 +204,7 @@ footer ul li {
 
 @media screen and (max-height: 410px){
     body {
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 0fr 4fr;
         grid-template-rows: 10vh 80vh 10vh;
     }
 
@@ -236,7 +236,7 @@ footer ul li {
 @media screen and (max-width: 640px) {
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 10vh 75vh 15vh;
+        grid-template-rows: 10vh 70vh 20vh;
     }
 
     .vertical-nav {
