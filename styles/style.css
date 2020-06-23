@@ -236,7 +236,7 @@ footer ul li {
 @media screen and (max-width: 640px) {
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 10vh 70vh 20vh;
+        grid-template-rows: 10vh 75vh 15vh;
     }
 
     .vertical-nav {
@@ -261,6 +261,10 @@ footer ul li {
     .focus-ativo-footer {
         background-color: rgb(20, 20, 20);
         color: rgb(131, 131, 131);
+    }
+
+    footer {
+        padding-bottom: 3rem;
     }
 }
 
