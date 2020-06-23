@@ -115,7 +115,7 @@ header p {
 }
 
 
-@media screen and (max-width: 624px) {
+@media screen and (max-width: 740px) {
     body {
         grid-template-columns: 0fr 4fr;
     }
@@ -148,8 +148,9 @@ header p {
     body {
         grid-template-columns: 0fr 4fr;
     }
-    
+
     .vertical-nav {
+        overflow-y: scroll;
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
     }
