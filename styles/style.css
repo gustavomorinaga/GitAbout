@@ -183,6 +183,10 @@ footer ul li {
         transition: transform 0.5s ease-in;
     }
 
+    .vertical-nav .lista li {
+        padding: 0 1rem;
+    }
+
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -243,6 +247,10 @@ footer ul li {
         overflow-y: scroll;
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
+    }
+
+    .vertical-nav .lista li {
+        padding: 0 2rem;
     }
 
     .menu-icon {
