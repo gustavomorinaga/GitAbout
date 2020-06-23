@@ -188,6 +188,11 @@ footer ul li {
         font-size: 20px;
     }
 
+    .vertical-nav .lista li:last-child {
+        padding: 2rem 2rem 4rem 2rem;
+        font-size: 20px;
+    }
+
     .vertical-nav .lista ul li {
         padding-right: 2rem;
         font-size: 20px;
@@ -229,6 +234,11 @@ footer ul li {
         font-size: 20px;
     }
 
+    .vertical-nav .lista li:last-child {
+        padding: 2rem 2rem 4rem 2rem;
+        font-size: 20px;
+    }
+
     .vertical-nav .lista ul li {
         padding-right: 2rem;
         font-size: 20px;
@@ -267,6 +277,11 @@ footer ul li {
 
     .vertical-nav .lista li {
         padding: 2rem;
+        font-size: 20px;
+    }
+
+    .vertical-nav .lista li:last-child {
+        padding: 2rem 2rem 4rem 2rem;
         font-size: 20px;
     }
 
