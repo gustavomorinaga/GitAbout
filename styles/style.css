@@ -11,7 +11,7 @@
 body {
     display: grid;
     grid-template-columns: 0.8fr 3fr;
-    grid-template-rows: 10vh 78vh 10vh;
+    grid-template-rows: 10vh 80vh 10vh;
     font-family: 'Roboto', sans-serif;
     position: fixed;
     overflow-x: hidden;
@@ -204,7 +204,7 @@ footer ul li {
 
 @media screen and (max-height: 410px){
     body {
-        grid-template-columns: 3fr 4fr;
+        grid-template-columns: 1fr 4fr;
         grid-template-rows: 10vh 80vh 10vh;
     }
 
@@ -236,7 +236,7 @@ footer ul li {
 @media screen and (max-width: 640px) {
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 10vh 60vh 30vh;
+        grid-template-rows: 10vh 75vh 15vh;
     }
 
     .vertical-nav {
@@ -276,7 +276,7 @@ footer ul li {
     }
 }
 
-@media screen and (max-height: 300px) {
+@media screen and (max-height: 360px) {
     body {
         grid-template-columns: 0fr 4fr;
         grid-template-rows: 20vh 65vh 15vh;
