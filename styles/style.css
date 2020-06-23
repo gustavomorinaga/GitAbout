@@ -11,7 +11,7 @@
 body {
     display: grid;
     grid-template-columns: 0.8fr 3fr;
-    grid-template-rows: 12vh 78vh 10vh;
+    grid-template-rows: 10vh 78vh 10vh;
     font-family: 'Roboto', sans-serif;
     position: fixed;
     overflow-x: hidden;
@@ -114,67 +114,6 @@ header p {
     margin: 5px;
 }
 
-
-@media screen and (max-width: 624px) {
-    body {
-        grid-template-columns: 0fr 4fr;
-    }
-
-    .vertical-nav {
-        transform: translateX(-100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    .menu-ativo {
-        transform: translateX(0%);
-    }
-
-    .focus-ativo {
-        background-color: rgb(131, 131, 131);
-    }
-
-    .focus-ativo-footer {
-        background-color: rgb(20, 20, 20);
-        color: rgb(131, 131, 131);
-    }
-}
-
-@media screen and (max-height: 410px){
-    body {
-        grid-template-columns: 0fr 4fr;
-        grid-template-rows: 10vh 80vh 10vh;
-    }
-
-    .vertical-nav {
-        overflow-y: scroll;
-        transform: translateX(-100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    .menu-ativo {
-        transform: translateX(0%);
-    }
-
-    .focus-ativo {
-        background-color: rgb(131, 131, 131);
-    }
-
-    .focus-ativo-footer {
-        background-color: rgb(20, 20, 20);
-        color: rgb(131, 131, 131);
-    }
-}
-
 main {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -231,6 +170,67 @@ footer ul {
 
 footer ul li {
     padding: 0.75rem;
+}
+
+@media screen and (max-width: 624px) {
+    body {
+        grid-template-columns: 0fr 4fr;
+        grid-template-rows: 12vh 78vh 10vh;
+    }
+
+    .vertical-nav {
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-ativo {
+        transform: translateX(0%);
+    }
+
+    .focus-ativo {
+        background-color: rgb(131, 131, 131);
+    }
+
+    .focus-ativo-footer {
+        background-color: rgb(20, 20, 20);
+        color: rgb(131, 131, 131);
+    }
+}
+
+@media screen and (max-height: 410px){
+    body {
+        grid-template-columns: 0fr 4fr;
+        grid-template-rows: 10vh 80vh 10vh;
+    }
+
+    .vertical-nav {
+        overflow-y: scroll;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-ativo {
+        transform: translateX(0%);
+    }
+
+    .focus-ativo {
+        background-color: rgb(131, 131, 131);
+    }
+
+    .focus-ativo-footer {
+        background-color: rgb(20, 20, 20);
+        color: rgb(131, 131, 131);
+    }
 }
 
 @media screen and (max-width: 640px) {
