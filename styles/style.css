@@ -184,11 +184,13 @@ footer ul li {
     }
 
     .vertical-nav .lista li {
-        padding: 0 3rem;
+        padding: 3rem;
+        font-size: 20px;
     }
 
     .vertical-nav .lista ul li {
         padding-right: 3rem;
+        font-size: 20px;
     }
 
     .menu-icon {
@@ -223,11 +225,13 @@ footer ul li {
     }
 
     .vertical-nav .lista li {
-        padding: 0 3rem;
+        padding: 3rem;
+        font-size: 20px;
     }
 
     .vertical-nav .lista ul li {
         padding-right: 3rem;
+        font-size: 20px;
     }
 
     .menu-icon {
@@ -262,11 +266,13 @@ footer ul li {
     }
 
     .vertical-nav .lista li {
-        padding: 0 3rem;
+        padding: 3rem;
+        font-size: 20px;
     }
 
     .vertical-nav .lista ul li {
         padding-right: 3rem;
+        font-size: 20px;
     }
 
     .menu-icon {
