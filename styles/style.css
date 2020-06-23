@@ -147,7 +147,7 @@ header p {
 @media screen and (max-height: 410px){
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 20vh 70vh 10vh;
+        grid-template-rows: 10vh 80vh 10vh;
     }
 
     .vertical-nav {
@@ -236,7 +236,7 @@ footer ul li {
 @media screen and (max-width: 640px) {
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 10vh 80vh 30vh;
+        grid-template-rows: 10vh 60vh 30vh;
     }
 
     .vertical-nav {
@@ -273,5 +273,12 @@ footer ul li {
 @media screen and (max-width: 410px) {
     footer {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-height: 200px) {
+    body {
+        grid-template-columns: 0fr 4fr;
+        grid-template-rows: 20vh 50vh 30vh;
     }
 }
