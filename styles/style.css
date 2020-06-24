@@ -98,6 +98,10 @@ header p {
     transition: background-color 0.5s;
 }
 
+.final {
+    margin-bottom: 0;
+}
+
 .categoria {
     background-color: rgb(40, 40, 40);
 }
@@ -179,6 +183,7 @@ footer ul li {
     }
 
     .vertical-nav {
+        overflow-y: scroll;
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
     }
@@ -195,6 +200,10 @@ footer ul li {
     .vertical-nav .lista ul li {
         padding: 2rem 4rem;
         font-size: 20px;
+    }
+
+    .final {
+        margin-bottom: 15vh;
     }
 
     .menu-icon {
@@ -242,6 +251,10 @@ footer ul li {
         font-size: 20px;
     }
 
+    .final {
+        margin-bottom: 15vh;
+    }
+
     .menu-icon {
         display: block;
         cursor: pointer;
@@ -285,6 +298,10 @@ footer ul li {
     .vertical-nav .lista ul li {
         padding: 2rem 4rem;
         font-size: 20px;
+    }
+
+    .final {
+        margin-bottom: 15vh;
     }
 
     .menu-icon {
