@@ -175,12 +175,16 @@ footer ul li {
 @media screen and (max-width: 624px) {
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 12vh 78vh 10vh;
+        grid-template-rows: 12vh 88vh 0vh;
     }
 
     .vertical-nav {
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
+    }
+
+    .vertical-nav .lista {
+        width: 360px;
     }
 
     .vertical-nav .lista li {
@@ -215,13 +219,17 @@ footer ul li {
 @media screen and (max-height: 420px){
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 10vh 80vh 10vh;
+        grid-template-rows: 10vh 90vh 0vh;
     }
 
     .vertical-nav {
         overflow-y: scroll;
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
+    }
+
+    .vertical-nav .lista {
+        width: 360px;
     }
 
     .vertical-nav .lista li {
@@ -256,13 +264,17 @@ footer ul li {
 @media screen and (max-width: 640px) {
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 10vh 75vh 15vh;
+        grid-template-rows: 10vh 90vh 0vh;
     }
 
     .vertical-nav {
         overflow-y: scroll;
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
+    }
+
+    .vertical-nav .lista {
+        width: 360px;
     }
 
     .vertical-nav .lista li {
@@ -313,6 +325,6 @@ footer ul li {
 @media screen and (max-height: 360px) {
     body {
         grid-template-columns: 0fr 4fr;
-        grid-template-rows: 20vh 65vh 15vh;
+        grid-template-rows: 20vh 80vh 0vh;
     }
 }
