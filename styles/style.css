@@ -188,8 +188,8 @@ footer ul li {
         font-size: 20px;
     }
 
-    .vertical-nav .lista li:last-child {
-        padding: 2rem 2rem 4rem 2rem;
+    li:last-child > .lista {
+        padding-bottom: 4rem;
         font-size: 20px;
     }
 
@@ -234,8 +234,8 @@ footer ul li {
         font-size: 20px;
     }
 
-    .vertical-nav .lista li:last-child {
-        padding: 2rem 2rem 4rem 2rem;
+    li:last-child > .lista {
+        padding-bottom: 4rem;
         font-size: 20px;
     }
 
@@ -280,8 +280,8 @@ footer ul li {
         font-size: 20px;
     }
 
-    .vertical-nav .lista li:last-child {
-        padding: 2rem 2rem 4rem 2rem;
+    li:last-child > .lista {
+        padding-bottom: 4rem;
         font-size: 20px;
     }
 
