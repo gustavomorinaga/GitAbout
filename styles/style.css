@@ -122,10 +122,10 @@ header p {
     display: flex;
     width: 100%;
     height: 100%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-column-start: 0;
+    grid-column-end: 0;
+    grid-row-start: 0;
+    grid-row-end: 0;
     opacity: 0;
     z-index: 1;
     background-color: black;
@@ -133,6 +133,10 @@ header p {
 }
 
 .focus-ativo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
     opacity: 0.5;
     transition: opacity 0.5s;
 }
