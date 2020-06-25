@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <title>Git</title>
+    <title>Git – Sobre Git</title>
 </head>
 <body>
     <div class="focus"></div>
@@ -22,14 +22,13 @@
         <ul class="lista">
             <a href="../index.html"><li>Controle de Versão</li></a>
             <a href="git.html"><li>Git</li></a>
-            <a href="#"><li>GitHub</li></a>
-            <a href="#"><li>GitLab</li></a>
+            <a href="github.html"><li>GitHub</li></a>
             <ul class="categoria">
-                <a href="#"><li>Criar conta no GitHub</li></a>
+                <a href="contaGitHub.html"><li>Criar conta no GitHub</li></a>
             </ul>
-            <a href="#"><li>GitLab</li></a>
+            <a href="gitlab.html"><li>GitLab</li></a>
             <ul class="categoria">
-                <a href="#"><li>Criar conta no GitLab</li></a>
+                <a href="contaGitLab.html"><li>Criar conta no GitLab</li></a>
             </ul>
             <a href="#"><li>Instalação</li></a>
             <ul class="categoria">
@@ -65,7 +64,7 @@
                 O Git trata seus dados mais como um fluxo do estado dos arquivos.
                 Toda vez que é feito um commit, ou salvar o estado de seu projeto no Git, ele basicamente 
                 tira cria uma imagem de todos os arquivos e armazena uma referência para esse conjunto de arquivos. 
-                Casoa os arquivos não foram alterados, o Git não armazena o arquivo novamente, 
+                Caso os arquivos não foram alterados, o Git não armazena o arquivo novamente, 
                 apenas um link para o arquivo idêntico anterior já armazenado.
             </p>
             <h2>Operação Local</h2>
@@ -73,6 +72,14 @@
                 Geralmente o Git trabalha com operações locais na área de trabalho do desenvolvedor, e caso esteja desconectado internet ou sem VPN,
                 pode-se efetuar a busca do histórico das versões do projeto no banco de dados local.
             </p>
+            <h2>Fluxo de Operação do Git</h2>
+            <p>O fluxo de trabalho é da seguinte forma:</p>
+            <ol>
+                <li><p>Você modifica os arquivos no seu diretório de trabalho;</p></li>
+                <li><p>Você prepara os arquivos, adicionando imagens deles à sua área de preparo;</p></li>
+                <li><p>Você executa o comando <b>commit</b>, o que leva os arquivos como eles estão na área de preparo 
+                    e armazena essa imagens de forma permanente para o diretório do Git.</p></li>
+            </ol>
             <small>Fonte:
                 <ul>
                     <li>
