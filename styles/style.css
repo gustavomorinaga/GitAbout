@@ -226,6 +226,10 @@ footer ul li {
         background-color: rgb(20, 20, 20);
         color: rgb(131, 131, 131);
     }
+
+    article {
+        margin-bottom: 5rem;
+    }
 }
 
 @media screen and (max-height: 420px){
@@ -274,6 +278,10 @@ footer ul li {
     .focus-ativo-footer {
         background-color: rgb(20, 20, 20);
         color: rgb(131, 131, 131);
+    }
+
+    article {
+        margin-bottom: 5rem;
     }
 }
 
@@ -327,6 +335,10 @@ footer ul li {
 
     footer {
         padding-bottom: 3rem;
+    }
+
+    article {
+        margin-bottom: 5rem;
     }
 }
 
