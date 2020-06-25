@@ -127,6 +127,7 @@ main {
     scrollbar-color: rgb(100, 100, 100) rgb(50, 50, 50);
     scrollbar-width: thin;
     transition: background-color 0.5s ease-in;
+    padding: 1rem;
 }
 
 article {
@@ -144,6 +145,10 @@ article p {
     font-weight: 300;
     font-size: 16px;
     margin: 1rem 0;
+}
+
+article img {
+    padding: 1rem;
 }
 
 footer {
