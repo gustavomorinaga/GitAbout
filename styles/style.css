@@ -9,7 +9,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 0.8fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 10vh 80vh 10vh;
     font-family: 'Roboto', sans-serif;
     position: fixed;
@@ -141,6 +141,11 @@ header p {
     transition: opacity 0.5s;
 }
 
+.logotipos-explicacao {
+    width: 20%;
+    float: right;
+}
+
 main {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -154,14 +159,23 @@ main {
 }
 
 article {
-    padding: 1rem 2rem;
+    padding: 0 2rem 1rem;
     line-height: 1.6;
 }
 
 article h1 {
+    display: inline-block;
     font-size: 30px;
     font-weight: 700;
-    margin: 1rem 0;
+    margin: 1rem 0 0;
+    clear: both;
+}
+
+article h2 {
+    display: inline-block;
+    font-weight: 700;
+    margin: 1rem 0 0;
+    clear: both;
 }
 
 article p {
