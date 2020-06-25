@@ -55,7 +55,7 @@
                 com equipe de desenvolvimento.
             </p>
             <p>
-                Apresenta 3 características:
+                Apresenta 5 características:
             </p>
             <ol>
                 <h2><li>Registro de Alterações</li></h2>
@@ -63,7 +63,6 @@
                     Quaisquer sejam as modificações feitas nas entrelinhas dos arquivos do projeto, serão salvas o histórico dessas
                     modificações, ajudando na visualização das mudanças realizadas entre versões e nas futuras correções de software.
                 </p>
-                <img src="" alt="">
                 <h2><li>Desenvolvimento de Versões Diferentes</li></h2>
                 <p>
                     Com um sistema que possui ramificações (Branches) de projeto, a equipe pode trabalhar simultaneamente de forma eficaz em
@@ -76,14 +75,71 @@
                     do projeto e comentários de cada ajuste realizado pelo programador, contudo, facilitando na análise de bugs e
                     no fluxo do projeto.
                 </p>
-                <h2>Como Funciona?</h2>
+                <h2><li>Segurança do Projeto</li></h2>
                 <p>
-                    O projeto fica armazenada no servidor(repositório remoto), onde ficam armazenados os históricos e 
-                    modificações de cada versão. O desenvolvedor pode baixar a última versão e trabalhá-la, e 
-                    posteriormente atualizar a versão contida no servidor.
+                    Somente pessoas autorizadas e identificadas podem manipular o código-fonte, evitando a corrupção
+                    dos arquivos.
                 </p>
-                <img src="images/ControleDeVersao/ControleDeVersao - Figura1.png" alt="Imagem ilustrativa do controle de versões dos projetos no servidor">
+                <h2><li>Repositório Remoto</li></h2>
+                <p>
+                    Todo o projeto será salvo em um repositório remoto, onde em casos de imprevistos pode facilitar na recuperação do projeto. 
+                </p>
             </ol>
+            <h2>Como Funciona:</h2>
+                <p>
+                    O projeto fica armazenado no servidor(repositório remoto), com todos os históricos e 
+                    modificações de cada versão. O desenvolvedor pode baixar a última versão e trabalhá-la em sua
+                    área de trabalho (Workstation) e posteriormente atualizar a versão contida no servidor.
+                </p>
+                <p>
+                    Os comandos utilizados para efeturem a sincronização de arquivos do projeto entre a área de trabalho
+                    e o servidor são: <b>commit</b> e <b>update</b>.
+                </p>
+                <p>
+                    O comando <b>commit</b> realiza o envio de todos os arquivos alterados na área de trabalho para o
+                    servidor com um novo histórico de atualização. O comando <b>update</b> irá baixar a última versão
+                    do servidor para a área de trabalho do programador.
+                </p>
+                <h2>Sistemas Centralizados de Controle de Versão</h2>
+                <p>
+                    Neste sistema, existe apenas um servidor e várias cópias do projeto nas diversas 
+                    áreas de trabalho, onde estabelece conexão entre eles. Caso o servidor eventualmente pare de funcionar,
+                    não é possível fazer a recuperação do projeto sem algum backup feito momentos antes, sendo um ponto
+                    negativo desse tipo de sistema.
+                </p>
+                <img src="images/ControleDeVersao/ControleDeVersao - Figura1.png" alt="Imagem ilustrativa do controle de versões dos projetos no servidor com sistema centralizado">
+                <h2>Sistemas Distribuídos de Controle de Versão</h2>
+                <p>
+                    Neste sistema, os desenvolvedores podem obter a versão mais recente e duplicar localmente 
+                    o repositório completo. Assim, caso um dos servidores cair, e esses sistemas estiverem 
+                    conectados por meio dele, qualquer um dos repositórios dos programadroes podem ser copiados
+                    de volta para o servidor para restaurá-lo. Cada clonagem feita do projeto é backup completo dos dados.
+                </p>
+                <img src="images/ControleDeVersao/ControleDeVersao - Figura2.png" alt="Imagem ilustrativa do controle de versões dos projetos no servidor">
+                <small>Fonte:
+                    <ul>
+                        <li>
+                            <a href="https://medium.com/@allangrds/controle-de-vers%C3%A3o-git-github-e-bitbucket-afinal-o-que-%C3%A9-tudo-isso-9fa13fc13307" target="_blank" rel="noopener noreferrer">
+                                Controle de Versão, Git, Github e Bitbucket — Afinal, o que é tudo isso?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Sobre-Controle-de-Vers%C3%A3o" target="_blank" rel="noopener noreferrer">
+                                Começando - Sobre Controle de Versão
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://blog.wkm.com.br/o-que-%C3%A9-e-porque-usar-um-sistema-de-controle-de-vers%C3%A3o-23f00b08e12d" target="_blank" rel="noopener noreferrer">
+                                O que é e porque usar um sistema de controle de versão
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pt.wikipedia.org/wiki/Sistema_de_controle_de_vers%C3%B5es" target="_blank" rel="noopener noreferrer">
+                                Sistema de controle de versões
+                            </a>
+                        </li>
+                    </ul>
+                </small>
         </article>
     </main>
     <footer>

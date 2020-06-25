@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -148,7 +147,9 @@ article p {
 }
 
 article img {
+    display: block;
     padding: 1rem;
+    margin: auto;
 }
 
 footer {
@@ -166,12 +167,12 @@ footer {
     align-items: center;
     letter-spacing: 1px;
     font-size: 16px;
-    padding: 1rem;
+    padding: auto;
     transition: background-color 0.5s ease-in, color 0.5s ease-in, font-size 0.2s ease-in;
 }
 
 footer p {
-    padding-right: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
 }
 
 footer ul {
@@ -235,6 +236,11 @@ footer ul li {
     article {
         margin-bottom: 5rem;
     }
+
+    article img {
+        padding: 1rem;
+        width: 95%;
+    }
 }
 
 @media screen and (max-height: 420px){
@@ -287,6 +293,11 @@ footer ul li {
 
     article {
         margin-bottom: 5rem;
+    }
+
+    article img {
+        padding: 1rem;
+        width: 95%;
     }
 }
 
@@ -344,6 +355,11 @@ footer ul li {
 
     article {
         margin-bottom: 5rem;
+    }
+
+    article img {
+        padding: 1rem;
+        width: 95%;
     }
 }
 
