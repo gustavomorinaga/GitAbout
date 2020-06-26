@@ -177,6 +177,14 @@ article h2 {
     clear: both;
 }
 
+article h2 li {
+    padding: 1rem;
+}
+
+article a {
+    text-decoration: none;
+}
+
 article p {
     font-weight: 300;
     font-size: 16px;
