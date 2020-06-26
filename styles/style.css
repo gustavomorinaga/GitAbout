@@ -212,7 +212,7 @@ article ol ul {
 .logo-system {
     display: flex;
     padding: 0;
-    margin: auto;
+    margin: auto 0;
     border-radius: 0;
     float: left;
 }
@@ -221,13 +221,14 @@ article ol ul {
     list-style: none;
     padding: 1rem;
     margin: 0 1rem 1rem 0;
-    text-align: right;
+    text-align: left;
     display: flex;
     color: white;
+    border-radius: 0.5rem;
 }
 
 .windows {
-    background-color: rgb(50, 182, 169);
+    background-color: rgb(43, 156, 145);
 }
 
 .linux {
@@ -322,6 +323,15 @@ footer ul li {
 
     .menu-ativo {
         transform: translateX(0%);
+    }
+
+    .lista-download {
+        display: block;
+        margin: auto;
+    }
+
+    .logo-system {
+        width: 15%;
     }
 
     article {
