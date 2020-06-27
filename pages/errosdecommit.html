@@ -46,35 +46,159 @@
         <article>
             <h1>Erros de Commit</h1>
             <p>
-                Para que você envie suas alterações para a origem você precisa antes verificar se o repositório
-                remoto sofreu alterações de outras pessoas desde que você começou a trabalhar naquela
-                branch, e caso haja alterações você precisa trazê-las para o seu código. O comando utilizado
-                para isso é:
+                Aqui informará como <b>corrigir</b> uma mensagem errada em um commit
             </p>
-            <div class="codigo">
-                <code>
-                    $ git pull
-                </code>
-            </div>
-            <p>
-                Quando você realiza um pull, o Git vai buscar as alterações de código dos outros
-                desenvolvedores e tentar fazer o merge daquelas alterações no seu código. Caso o Git não
-                consiga fazer o merge automático ele marcará as seções do código onde há conflito e você
-                precisará juntar os códigos manualmente, indicando se vai utilizar as alterações que vieram da
-                origem, as suas alterações locais, ambas ou até mesmo mesclar as duas. Uma vez que terminar
-                de realizar o merge, faça um git add e depois um commit para salvar essas alterações.
-            </p>
+            <ol>
+                <h2><li>Editar o último commit local (ANTES DO PUSH):</li></h2>
+                <div class="codigo">
+                    <code>
+                        $ git commit --amend
+                    </code>
+                </div>
+                <p>
+                    Irá abrir seu editor de texto, com o conteúdo da mensagem do último
+                    commit e você pode editar tranquilamente.
+                </p>
+                <h2><li>Editar commits mais antigos (ANTES DO PUSH):</li></h2>
+                <p>
+                    Você vai precisar fazer um rebase do seu histórico, que é mais complexo que o
+                    processo anterior:
+                </p>
+                <div class="codigo">
+                    <code>
+                        $ git rebase -i HEAD~3
+                    </code>
+                </div>
+                <p>
+                    A lista vai ser assim:
+                </p>
+                <div class="codigo">
+                    <code>
+                        pick e499d89 Delete CNAME
+                    </code>
+                    <br>
+                    <code>
+                        pick 0c39034 Better README
+                    </code>
+                    <br>
+                    <code>
+                        pick f7fde4a Change the commit message but push the same commit.
+                    </code>
+                    <br>
+                    <br>
+                    <code>
+                        # Rebase 9fdb3bd..f7fde4a onto 9fdb3bd
+                    </code>
+                    <br>
+                    <code>
+                        #
+                    </code>
+                    <br>
+                    <code>
+                        # Commands:
+                    </code>
+                    <br>
+                    <code>
+                        #  p, pick = use commit
+                    </code>
+                    <br>
+                    <code>
+                        #  r, reword = use commit, but edit the commit message
+                    </code>
+                    <br>
+                    <code>
+                        #  e, edit = use commit, but stop for amending
+                    </code>
+                    <br>
+                    <code>
+                        #  s, squash = use commit, but meld into previous commit
+                    </code>
+                    <br>
+                    <code>
+                        #  f, fixup = like "squash", but discard this commit's log message
+                    </code>
+                    <br>
+                    <code>
+                        #  x, exec = run command (the rest of the line) using shell
+                    </code>
+                    <br>
+                    <code>
+                        #
+                    </code>
+                    <br>
+                    <code>
+                        # These lines can be re-ordered; they are executed from top to bottom.
+                    </code>
+                    <br>
+                    <code>
+                        #
+                    </code>
+                    <br>
+                    <code>
+                        # If you remove a line here THAT COMMIT WILL BE LOST.
+                    </code>
+                    <br>
+                    <code>
+                        #
+                    </code>
+                    <br>
+                    <code>
+                        # However, if you remove everything, the rebase will be aborted.
+                    </code>
+                    <br>
+                    <code>
+                        #
+                    </code>
+                    <br>
+                    <code>
+                        # Note that empty commits are commented out
+                    </code>
+                </div>
+                <p>
+                    Altere <b>"pick"</b> para <b>"reword"</b> nos commits que você quer editar a mensagem:
+                </p>
+                <div class="codigo">
+                    <code>
+                        pick e499d89 Delete CNAME
+                    </code>
+                    <br>
+                    <code>
+                        reword 0c39034 Better README
+                    </code>
+                    <br>
+                    <code>
+                        reword f7fde4a Change the commit message but push the same commit.
+                    </code>
+                </div>
+                <p>
+                    Salve e feche o arquivo. Depois disso o git vai abrir cada um dos commits
+                     marcados com <b>"reword"</b> para edição. Edite as mensagens, salve e feche.
+                </p>
+                <h2><li>Alterar os commits (DEPOIS DO PUSH):</li></h2>
+                <p>
+                    Antes de mais nada, isso é <b class="danger">altamente não recomendado</b>.
+                    Isso pode quebrar o respositório.
+                </p>
+                <p>
+                    Para alterar o histórico depois do push, basta seguir um dos passos acima e depois executar:
+                </p>
+                <div class="codigo">
+                    <code>
+                        $ git push –force
+                    </code>
+                </div>
+            </ol>
             <hr>
             <small>Fonte:
                 <ul>
                     <li>
-                        <a href="https://help.github.com/pt/github/using-git/getting-changes-from-a-remote-repository" target="_blank" rel="noopener noreferrer">
-                            Obter alterações de um repositório remote
+                        <a href="https://help.github.com/en/github/committing-changes-to-your-project/changing-a-commit-message" target="_blank" rel="noopener noreferrer">
+                            Alterando uma mensagem de commit
                         </a>
                     </li>
                     <li>
-                        <a href="https://git-scm.com/docs/git-pull" target="_blank" rel="noopener noreferrer">
-                            Git Pull (documentação em inglês)
+                        <a href="https://pt.stackoverflow.com/questions/61429/como-editar-uma-mensagem-de-commit-incorreta-no-git" target="_blank" rel="noopener noreferrer">
+                            Como editar uma mensagem de commit incorreta no Git?
                         </a>
                     </li>
                 </ul>

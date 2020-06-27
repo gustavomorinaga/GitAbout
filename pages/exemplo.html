@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Git – Exemplo de Colaboração com Git</title>
+</head>
+<body>
+    <div class="focus"></div>
+    <header>
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img src="../images/Logo/Git Logo.png" alt="Logotipo do Git">
+        <p>Git</p>
+    </header>
+    <nav class="vertical-nav">
+        <ul class="lista">
+            <a href="../index.html"><li>Controle de Versão</li></a>
+            <a href="git.html"><li>Git</li></a>
+            <a href="github.html"><li>GitHub</li></a>
+            <ul class="categoria">
+                <a href="contaGitHub.html"><li>Criar conta no GitHub</li></a>
+            </ul>
+            <a href="gitlab.html"><li>GitLab</li></a>
+            <a href="instalacao.html"><li>Instalação</li></a>
+            <ul class="categoria">
+                <a href="instalacaoLinux.html"><li>Instalação no Linux</li></a>
+                <a href="instalacaoWindows.html"><li>Instalação no Windows</li></a>
+            </ul>
+            <a href="configuracao.html"><li>Configuração</li></a>
+            <a href="comandos.html"><li>Comandos</li></a>
+            <ul class="categoria">
+                <a href="gitpull.html"><li>Git Pull</li></a>
+                <a href="branches.html"><li>Branches</li></a>
+            </ul>
+            <a href="errosdecommit.html"><li>Erros no Commit</li></a>
+            <a href="exemplo.html"><li class="final">Exemplo de Utilização com Git</li></a>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>Exemplo de Colaboração com Git</h1>
+            <img class="logotipos-explicacao" src="../images/Exemplo/Figura1_Exemplo.png" alt="Figura de colaboração Git">
+            <p>
+                O Git é uma das melhores ferramentas para se trabalhar em projetos em equipe,
+                com várias ferramentas de análise, criação de repertórios, rastreabilidade de erros,
+                distribuir versões e muitas outras funções.
+            </p>
+            <p>
+                Um exemplo para começar a utilizar o Git: criar um projeto colaborativo entre alunos
+                de uma faculdade utilizando o Git.
+            </p>
+            <p>
+                Para que o projeto seja trabalhado em equipe na internet, é preciso que todos os alunos
+                participantes precisam do Git instalado em seus computadores, devem configurá-los e conectá-los
+                a uma plataforma como GitHub ou GitLab.
+            </p>
+            <p>
+                Feito esses primeiros passos de configuração, agora um dos integrantes deve criar o
+                repositório do projeto em uma das plataformas escolhidas, enquanto os outros deverão dar 
+                <b>"fork"</b> nesse repositório.
+            </p>
+            <p>
+                Em seguida, os que deram <b>"fork"</b> precisarão fazer a clonagem do repositório para sua máquina
+                usando o link e o seguinte comando no terminal: 
+            </p>
+            <div class="codigo">
+                <code>
+                    $ git clone link-do-repositório
+                </code>
+            </div>
+            <p>
+                Concluindo essa etapa, a equipe pode começar a desenvolver seus projetos em seus editores de texto
+                que preferirem (Visual Studio Code, Brackets, Notepad++, Sublime Text, ...).
+            </p>
+            <p>
+                Terminado o código desenvolvido, deve-se digitar os seguintes comandos:
+            </p>
+            <div class="codigo">
+                <code>
+                    $ git remote -v
+                </code>
+            </div>
+            <p>
+                Caso apareça <b>"ORIGIN"</b> é que você clonou o repositório, caso seja <b>"UPSTREAM"</b>
+                é o repositório original.
+            </p>
+            <p>
+                Para adicionar um link para o repositório upstream, deve seguir este comando com
+                o nome de usuário da pessoa que criou o repositório e o nome do repositório:
+            </p>
+            <div class="codigo">
+                <code>
+                    $ git remote add upstream https://github.com/usuario/repositorio.git
+                </code>
+            </div>
+            <p>
+                Para adicionar um link para o repositório origin, deve seguir este comando com
+                o seu nome de usuário e o nome do repositório que efetuou o fork:
+            </p>
+            <div class="codigo">
+                <code>
+                    $ git remote add origin https://github.com/usuario.repositorio.git
+                </code>
+            </div>
+            <p>
+                Por sua vez, todos devem digitar: 
+            </p>
+            <div class="codigo">
+                <code>
+                    $ git pull upstream master
+                </code>
+            </div>
+            <p>
+                Todos baixarão para as suas pastas qualquer atualização do repositório upstream, caso seja inexistente.
+            </p>
+            <p>
+                Por ora, foi atualizado somente na máquina local dos integrantes, deve-se atualizar também a plataforma
+                remotamente. Um de cada vez, todos devem digitar: 
+            </p>
+            <div class="codigo">
+                <code>
+                    $ git add .
+                </code>
+                <br>
+                <code>
+                    $ git commit -m "Comentário"
+                </code>
+                <br>
+                <code>
+                    $ git push origin master
+                </code>
+            </div>
+            <p>
+                <b>Lembrando:</b> o comentário é utilizado para indicar as alterações feitas no código-fonte do projeto
+                da equipe.
+            </p>
+            <p>
+                Em seu repositório clonado, o usuário que criou o repositório deve verificar o código do restante,
+                fazendo um <b>"New Pull Request"</b> na plataforma.
+            </p>
+            <p>
+                Dessa forma, todos que precisarem colaborar com um projeto de desenvolvimento de código, deve seguir os
+                passos anteriores e desfrutar livremente da ferramenta!
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Integrantes:</p>
+        <ul>
+            <li>Gustavo Matheus</li>
+            <li>Matheus Felipe</li>
+            <li>Felipe Silva</li>
+            <li>Pedro Ribeiro</li>
+        </ul>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

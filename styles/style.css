@@ -248,12 +248,16 @@ article ol ul {
     border-radius: 1rem;
 }
 
+.danger {
+    color: rgb(180, 0, 0);
+}
+
 code {
     color: white;
 }
 
 footer {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(25, 25, 25);
     color: white;
     grid-column-start: 2;
     grid-column-end: 3;
