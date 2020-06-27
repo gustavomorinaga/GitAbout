@@ -252,6 +252,10 @@ article ol ul {
     color: rgb(180, 0, 0);
 }
 
+.exemplo-deitado {
+    display: none;
+}
+
 code {
     color: white;
 }
@@ -342,6 +346,14 @@ hr {
         width: 15%;
     }
 
+    .exemplo-deitado {
+        display: block;
+    }
+
+    .exemplo-pe {
+        display: none;
+    }
+
     article {
         margin-bottom: 5rem;
     }
@@ -391,6 +403,14 @@ hr {
         transform: translateX(0%);
     }
 
+    .exemplo-deitado {
+        display: block;
+    }
+
+    .exemplo-pe {
+        display: none;
+    }
+
     article {
         margin-bottom: 5rem;
     }
@@ -434,6 +454,14 @@ hr {
 
     .menu-ativo {
         transform: translateX(0%);
+    }
+
+    .exemplo-deitado {
+        display: block;
+    }
+
+    .exemplo-pe {
+        display: none;
     }
 
     footer {
