@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Git – Instalação no Windows</title>
+</head>
+<body>
+    <div class="focus"></div>
+    <header>
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <img src="../images/Logo/Git Logo.png" alt="Logotipo do Git">
+        <p>Git</p>
+    </header>
+    <nav class="vertical-nav">
+        <ul class="lista">
+            <a href="../index.html"><li>Controle de Versão</li></a>
+            <a href="git.html"><li>Git</li></a>
+            <a href="github.html"><li>GitHub</li></a>
+            <ul class="categoria">
+                <a href="contaGitHub.html"><li>Criar conta no GitHub</li></a>
+            </ul>
+            <a href="gitlab.html"><li>GitLab</li></a>
+            <a href="instalacao.html"><li>Instalação</li></a>
+            <ul class="categoria">
+                <a href="instalacaoLinux.html"><li>Instalação no Linux</li></a>
+                <a href="instalacaoWindows.html"><li>Instalação no Windows</li></a>
+            </ul>
+            <a href="configuracao.html"><li>Configuração</li></a>
+            <a href="comandos.html"><li>Comandos</li></a>
+            <ul class="categoria">
+                <a href="gitpull.html"><li>GitPull</li></a>
+                <a href="branches.html"><li>Branches</li></a>
+            </ul>
+            <a href="errosdecommit.html"><li>Erros no Commit</li></a>
+            <a href="exemplo.html"><li class="final">Exemplo de Utilização com Git</li></a>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>Configuração do Git</h1>
+            <p>
+                Nesta página, você aprenderá a fazer a <b>configuração do Git</b>:
+            </p>
+            <ol>
+                <h2><li>Acesse o Git no Windows ou terminal do Linux.</li></h2>
+                <p>
+                    Para que sempre que abrir o git e quiser que grave o seu <b>nome</b>:
+                </p>
+                <div class="codigo">
+                    <code>
+                        $ git config --global user.name “seu-nome”
+                    </code>
+                </div>
+                <p>
+                    Para que sempre que abrir o git e quiser que grave o seu <b>email</b>:
+                </p>
+                <div class="codigo">
+                    <code>
+                        $ git config --global user.email “seu email”
+                    </code>
+                </div>
+                <h2><li>Pronto! O Git está configurado!</li></h2>
+                <p>
+                    Para checar se a configuração está correta, digite o comando:
+                </p>
+                <div class="codigo">
+                    <code>
+                        $ git config --list
+                    </code>
+                </div>
+                <p>
+                    O Git possui um editor de texto incluido na instalação, mas você pode utilizar outros
+                    de sua preferência.
+                </p>
+            </ol>
+            <h2>Lembrando:</h2>
+            <ul>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                $ git config
+                            </code>
+                        </div>
+                        é a configuração do Git;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                --global
+                            </code>
+                        </div>
+                        é a gravação do seu nome e email;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                user.name
+                            </code>
+                        </div>
+                        é o seu nome;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                user.email
+                            </code>
+                        </div>
+                        é o seu email;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                --list
+                            </code>
+                        </div>
+                        é a lista de configuraçãoes.
+                    </p>
+                </li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Integrantes:</p>
+        <ul>
+            <li>Gustavo Matheus</li>
+            <li>Matheus Felipe</li>
+            <li>Felipe Silva</li>
+            <li>Pedro Ribeiro</li>
+        </ul>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
