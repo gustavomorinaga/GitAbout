@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <title>Git – Sobre GitHub</title>
+    <title>Git – Branches</title>
 </head>
 <body>
     <div class="focus"></div>
@@ -44,49 +44,59 @@
     </nav>
     <main>
         <article>
-            <h1>GitHub</h1>
-            <img class="logotipos-explicacao" src="../images/GitHub/GitHubLogo.png" alt="Logotipo do Git">
+            <h1>Branches</h1>
             <p>
-                O GitHub é uma plataforma de hospedagem colaborativa de código-fonte com controle de versão usando o Git. 
-                É a maior rede social dedicada para desenvolvedores atualmente, permitindo aos cadastrados na plataforma 
-                contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo e a qualquer momento.
+                Uma ramificação no Git é um ponteiro para as alterações feitas nos arquivos do projeto. É útil
+                em situações nas quais você deseja adicionar um novo recurso ou corrigir um erro, gerando
+                uma nova ramificação garantindo que o código instável não seja mesclado nos arquivos do
+                projeto principal. Depois de concluir a atualização dos códigos da ramificação, você pode
+                mesclar a ramificação com a principal, geralmente chamada de master.
             </p>
+            <h2>Como criar um branch local</h2>
             <p>
-                Desenvolvida por Chris Wanstrath, J. Hyett, Tom Preston-Werner e Scott Chacon, o primeiro
-                <b>commit</b> realizado pela empresa em 2007, em São Francisco.
+                Estando na pasta do projeto (master), podemos criar um novo branch local usando o
+                comando:
             </p>
+            <div class="codigo">
+                <code>
+                    $ git branch branch-001
+                </code>
+            </div>
             <p>
-                A plataforma possibilita a criação de repertórios ilimitados (em vigor desde 2019), ferramentas
-                de revisão de código, suporte a Wiki e rastreamento de erros. Porém, o GitHub possui duas versões
-                de contas de usuário: a gratuita (todos benefícios citados anteriormente) e a paga (adicionando 
-                funções como a criação de branches), além de depender de ferramentas de terceiros para Sistemas de CI/CD.
+                Após criar o branch é preciso fazer o checkout para acessar o branch:
             </p>
+            <div class="codigo">
+                <code>
+                    $ git checkout branch-001
+                </code>
+            </div>
             <p>
-                O GitHub é mundialmente usado e chega a ter mais de 36 milhões de usuários ativos mundialmente 
-                contribuindo em projetos comerciais ou pessoais. Atualmente o GitHub abriga mais de 100 milhões de projetos.
+                Ou ainda pode criar um novo branch e acessar usando o comando:
             </p>
-            <h2>A Rede Social dos Desenvolvedores</h2>
+            <div class="codigo">
+                <code>
+                    $ git checkout -b branch-001
+                </code>
+            </div>
             <p>
-                O Git é a fonte primordial do GitHub, onde os comandos através do Git serão enviados para
-                o repositório do programador cadastrado na plataforma. O Hub significa a socialização com 
-                pessoas que possuem os mesmos interesses de projeto que você.
+                Para verificar o novo branch digite:
             </p>
+            <div class="codigo">
+                <code>
+                    $ git status
+                </code>
+            </div>
             <hr>
             <small>Fonte:
                 <ul>
                     <li>
-                        <a href="https://rockcontent.com/blog/o-que-e-github/" target="_blank" rel="noopener noreferrer">
-                            Entenda de uma vez o que é Github e a importância dele num negócio
+                        <a href="https://help.github.com/pt/github/collaborating-with-issues-and-pull-requests/about-branches" target="_blank" rel="noopener noreferrer">
+                            Sobre branches
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.hostinger.com.br/tutoriais/o-que-github/" target="_blank" rel="noopener noreferrer">
-                            O Que é GitHub e Para Que é Usado?
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://pt.wikipedia.org/wiki/GitHub" target="_blank" rel="noopener noreferrer">
-                            GitHub
+                        <a href="https://www.atlassian.com/br/git/tutorials/using-branches" target="_blank" rel="noopener noreferrer">
+                            Git Branch
                         </a>
                     </li>
                 </ul>

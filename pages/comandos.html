@@ -35,7 +35,7 @@
             <a href="configuracao.html"><li>Configuração</li></a>
             <a href="comandos.html"><li>Comandos</li></a>
             <ul class="categoria">
-                <a href="gitpull.html"><li>GitPull</li></a>
+                <a href="gitpull.html"><li>Git Pull</li></a>
                 <a href="branches.html"><li>Branches</li></a>
             </ul>
             <a href="errosdecommit.html"><li>Erros no Commit</li></a>
@@ -44,92 +44,129 @@
     </nav>
     <main>
         <article>
-            <h1>Configuração do Git</h1>
+            <h1>Comandos do Git</h1>
             <p>
-                Nesta página, você aprenderá a fazer a <b>configuração do Git</b>:
+                Nesta página, você verá os principais <b>comandos do Git</b>:
             </p>
-            <ol>
-                <h2><li>Acesse o Git no Windows ou terminal do Linux.</li></h2>
-                <p>
-                    Para que sempre que abrir o git e quiser que grave o seu <b>nome</b>:
-                </p>
-                <div class="codigo">
-                    <code>
-                        $ git config --global user.name “seu-nome”
-                    </code>
-                </div>
-                <p>
-                    Para que sempre que abrir o git e quiser que grave o seu <b>email</b>:
-                </p>
-                <div class="codigo">
-                    <code>
-                        $ git config --global user.email “seu email”
-                    </code>
-                </div>
-                <h2><li>Pronto! O Git está configurado!</li></h2>
-                <p>
-                    Para checar se a configuração está correta, digite o comando:
-                </p>
-                <div class="codigo">
-                    <code>
-                        $ git config --list
-                    </code>
-                </div>
-                <p>
-                    O Git possui um editor de texto incluido na instalação, mas você pode utilizar outros
-                    de sua preferência.
-                </p>
-            </ol>
-            <h2>Lembrando:</h2>
             <ul>
                 <li>
                     <p>
                         <div class="codigo">
                             <code>
-                                $ git config
+                                git init
                             </code>
                         </div>
-                        é a configuração do Git;
+                        para inicializar um repositório;
                     </p>
                 </li>
                 <li>
                     <p>
                         <div class="codigo">
                             <code>
-                                --global
+                                git status
                             </code>
                         </div>
-                        é a gravação do seu nome e email;
+                        para obter status do repositório;
                     </p>
                 </li>
                 <li>
                     <p>
                         <div class="codigo">
                             <code>
-                                user.name
+                                git add .
                             </code>
                         </div>
-                        é o seu nome;
+                        para adicionar arquivos novos e alterados;
                     </p>
                 </li>
                 <li>
                     <p>
                         <div class="codigo">
                             <code>
-                                user.email
+                                git commit -m "mensagem de alteração"
                             </code>
                         </div>
-                        é o seu email;
+                        para fazer as mudanças no repositório;
                     </p>
                 </li>
                 <li>
                     <p>
                         <div class="codigo">
                             <code>
-                                --list
+                                git pull origin nome-do-branch
                             </code>
                         </div>
-                        é a lista de configuraçãoes.
+                        para ver o histórico do servidor remoto;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                git push origin nome-do-branch
+                            </code>
+                        </div>
+                        para enviar o histórico ao servidor remoto;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                git branch
+                            </code>
+                        </div>
+                        para listar as branches;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                git checkout nome-do-branch
+                            </code>
+                        </div>
+                        para alternar de branch;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                git branch nome-do-branch
+                            </code>
+                        </div>
+                        para criar um branch;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                git checkout -b new-issue
+                            </code>
+                        </div>
+                        para criar e selecionar o branch;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                git branch -d nome-do-branch
+                            </code>
+                        </div>
+                        para deletar um branch local;
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <div class="codigo">
+                            <code>
+                                git push origin :nome-do-branch
+                            </code>
+                        </div>
+                        para deletar um branch remoto;
                     </p>
                 </li>
             </ul>

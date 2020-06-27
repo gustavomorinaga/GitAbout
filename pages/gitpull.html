@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <title>Git – Instalação</title>
+    <title>Git – Git Pull</title>
 </head>
 <body>
     <div class="focus"></div>
@@ -44,26 +44,41 @@
     </nav>
     <main>
         <article>
-            <h1>Instalação</h1>
-            <p>Escolha em qual Sistema Operacional irá instalar o Git para começar o tutorial:</p>
-            <ul class="lista-download">
-                <a href="instalacaoLinux.html">
-                    <li class="download linux">
-                        <img class="logo-system" src="../images/Logo/Linux Logo.png" alt="Logotipo do Linux">
-                        <span>
-                            Intalação no Linux
-                        </span>
+            <h1>Git Pull</h1>
+            <p>
+                Para que você envie suas alterações para a origem você precisa antes verificar se o repositório
+                remoto sofreu alterações de outras pessoas desde que você começou a trabalhar naquela
+                branch, e caso haja alterações você precisa trazê-las para o seu código. O comando utilizado
+                para isso é:
+            </p>
+            <div class="codigo">
+                <code>
+                    $ git pull
+                </code>
+            </div>
+            <p>
+                Quando você realiza um pull, o Git vai buscar as alterações de código dos outros
+                desenvolvedores e tentar fazer o merge daquelas alterações no seu código. Caso o Git não
+                consiga fazer o merge automático ele marcará as seções do código onde há conflito e você
+                precisará juntar os códigos manualmente, indicando se vai utilizar as alterações que vieram da
+                origem, as suas alterações locais, ambas ou até mesmo mesclar as duas. Uma vez que terminar
+                de realizar o merge, faça um git add e depois um commit para salvar essas alterações.
+            </p>
+            <hr>
+            <small>Fonte:
+                <ul>
+                    <li>
+                        <a href="https://help.github.com/pt/github/using-git/getting-changes-from-a-remote-repository" target="_blank" rel="noopener noreferrer">
+                            Obter alterações de um repositório remote
+                        </a>
                     </li>
-                </a>
-                <a href="instalacaoWindows.html">
-                    <li class="download windows">
-                        <img class="logo-system" src="../images/Logo/Windows-Logo.png" alt="Logotipo do Windows">
-                        <span>
-                            Instalação no Windows
-                        </span>
+                    <li>
+                        <a href="https://git-scm.com/docs/git-pull" target="_blank" rel="noopener noreferrer">
+                            Git Pull (documentação em inglês)
+                        </a>
                     </li>
-                </a>
-            </ul>
+                </ul>
+            </small>
         </article>
     </main>
     <footer>
