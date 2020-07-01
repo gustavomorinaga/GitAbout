@@ -368,6 +368,10 @@ hr {
         display: none;
     }
 
+    .logotipos-explicacao {
+        float: none;
+    }
+
     article {
         margin-bottom: 5rem;
     }
@@ -425,6 +429,10 @@ hr {
         display: none;
     }
 
+    .logotipos-explicacao {
+        float: none;
+    }
+
     article {
         margin-bottom: 5rem;
     }
@@ -476,6 +484,10 @@ hr {
 
     .exemplo-pe {
         display: none;
+    }
+
+    .logotipos-explicacao {
+        float: none;
     }
 
     footer {
