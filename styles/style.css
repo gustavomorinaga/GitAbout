@@ -348,9 +348,9 @@ hr {
     display: block;
     cursor: pointer;
   }
-
   .menu-ativo {
     transform: translateX(0%);
+    width: 318px;
   }
 
   .lista-download {
