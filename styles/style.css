@@ -32,6 +32,7 @@ header {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
+  width: 100vw;
 }
 
 header img {
@@ -371,6 +372,10 @@ hr {
 
   .logotipos-explicacao {
     float: none;
+  }
+
+  main {
+    width: 100vw;
   }
 
   article {
