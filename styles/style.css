@@ -16,6 +16,7 @@ body {
   position: fixed;
   overflow-x: hidden;
   transition: grid-template-rows 0.5s ease-in;
+  min-width: 100vw;
 }
 
 header {
@@ -347,9 +348,9 @@ hr {
     display: block;
     cursor: pointer;
   }
-
   .menu-ativo {
     transform: translateX(0%);
+    width: 318px;
   }
 
   .lista-download {
