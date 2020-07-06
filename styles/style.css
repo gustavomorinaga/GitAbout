@@ -54,7 +54,7 @@ header p {
   z-index: 3;
   overflow-y: hidden;
   overflow-x: hidden;
-  margin-right: 0;
+  margin-right: auto;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 2;
@@ -350,7 +350,6 @@ hr {
   }
   .menu-ativo {
     transform: translateX(0%);
-    width: 318px;
   }
 
   .lista-download {
