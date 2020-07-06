@@ -46,8 +46,15 @@
         <article>
             <h1>Erros de Commit</h1>
             <p>
-                Aqui informará como <b>corrigir</b> uma mensagem errada em um commit.
+                Digamos que você acabou de fazer um commit e errou na mensagem do log de confirmação.
+                 Executar este comando quando não existe nada na área de staging permite que você
+                 edite a mensagem do commit anterior sem alterar o snapshot.
+                Commits prematuros acontecem o tempo todo durante o desenvolvimento diário. 
+                É fácil esquecer de preparar um arquivo ou formatar a mensagem de commit da 
+                forma errada. 
+                
             </p>
+            <p><b>Aqui estão os métodos para fazer a correção desses erros:</b></p>
             <ol>
                 <h2><li>Editar o último commit local (ANTES DO PUSH):</li></h2>
                 <div class="codigo">
@@ -188,7 +195,12 @@
                     </code>
                 </div>
             </ol>
+            <p class="alerta-commit">O recomendável é evitar tanto quanto possível o push forçado, 
+            uma vez que isso altera o histórico do repositório.
+            No caso de push forçado, as pessoas que já clonaram o repositório terão que corrigir 
+            manualmente o respectivo histórico local.</p>
             <hr>
+
             <small>Fonte:
                 <ul>
                     <li>
